@@ -1,0 +1,95 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", Font Awesome, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    color: #ebdbb2; /* Gruvbox foreground */
+    border-radius: 20px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0); /* Fully transparent bar */
+}
+
+/* ----- Module Groups ----- */
+.modules-left {
+    background-color: rgba(60, 56, 54, 0.8); /* Gruvbox dark gray */
+    margin: 2px 0 0 5px;
+}
+
+.modules-center {
+    background-color: rgba(40, 40, 40, 0.85); /* Gruvbox bg */
+    margin: 2px 0 0 0;
+}
+
+.modules-right {
+    background-color: rgba(40, 40, 40, 0.85); /* Gruvbox bg */
+    margin: 2px 10px 0 0;
+}
+
+/* ----- Individual Modules ----- */
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    background-color: #181818;
+}
+
+#workspaces button.active {
+  background-color: #181818; 
+  color: #1d2021;
+  font-weight: bold;
+}
+
+
+#workspaces button.focused {
+    background-color: #504945; /* Gruvbox medium gray */
+    color: #fabd2f; /* yellow */
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#custom-arch,
+#custom-uptime,
+#custom-power,
+#tray {
+    padding: 0 10px;
+}
+
+#custom-power {
+    background-color: #181818;
+    border-radius: 100px;
+    margin: 5px 5px;
+    padding: 1px 1px 1px 6px;
+    animation: pulse 2s infinite;
+}
+
+/* Uptime style */
+#custom-uptime {
+    font-weight: bold;
+    color: #fabd2f
+}
+
+/* Indicators */
+#battery.charging {
+    color: #b8bb26; /* green */
+}
+#battery.warning:not(.charging) {
+    color: #fabd2f; /* yellow */
+}
+#battery.critical:not(.charging) {
+    color: #fb4934; /* red */
+}
+#pulseaudio.muted {
+    color: #fb4934; /* red */
+}
+#tray > .passive {
+    opacity: 0.5;
+}
+

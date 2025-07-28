@@ -1,0 +1,119 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "Iosevka Nerd Font";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+}
+
+window#waybar {
+    background: #12101A; /* Dark background */
+    border: 2px solid #2B2836;
+}
+
+tooltip {
+    background-color: #1E1B29;
+    border: 2px solid #E7A95D;
+    color: #F29CA3;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: #1A1824;
+    margin: 6px 0px 6px 6px;
+    border: 2px solid #2B2836;
+}
+
+#workspaces button {
+    all: unset;
+    padding: 2px 6px;
+    margin: 0 2px;
+    border-radius: 4px;
+    color: #F29CA3; /* Pink from the wallpaper */
+}
+
+#workspaces button.active {
+    background-color: #F5A97F; /* Cyan highlight */
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #2B2836;
+    box-shadow: 0px 0px 6px #ED8796;
+}
+
+#workspaces button.urgent {
+    background-color: #E67860; /* Coral-red urgent */
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background-color: #8BD5CA;
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* Modules */
+#custom-wayves,
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#backlight {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+    background-color: #1A1824;
+    border: 2px solid #2B2836;
+    color: #EED49F; /* Gold */
+}
+
+#clock {
+    color: #F29CA3;
+}
+
+#tray {
+    background-color: #EED49F;
+    border: 2px solid #C78A4A;
+    color: #1E1B29;
+}
+
+#battery {
+    background-color: #EED49F;
+    border: 2px solid #C78A4A;
+    color: #1E1B29;
+}
+
+#cpu.critical,
+#memory.critical {
+    background-color: #E7A95D;
+    border: 2px solid #C78A4A;
+    color: #E67860;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    background-color: #EED49F;
+    border: 2px solid #C78A4A;
+    color: #E67860;
+}
+
+#custom-arch {
+    background-color: transparent;
+    color: #58D1C9;
+    font-size: 18px;
+    padding: 4px 10px;
+    margin: 6px 0px 6px 6px;
+    border: none;
+}
+
+#custom-colorpicker {
+    background-color: #1A1824;
+    border: 2px solid #2B2836;
+    color: #EED49F;
+    padding: 4px 8px;
+    margin: 6px 6px 6px 0px;
+}

@@ -1,0 +1,13 @@
+* {
+  background:       #282828E6;  // dark0_hard with transparency
+  foreground:       #ebdbb2;    // light1
+  accent:           #fabd2f99;  // bright_yellow with some transparency
+  background-tb:    #3c3836;    // dark1
+  border-tb:        #504945;    // dark2
+  selected:         linear-gradient(to right, #504945, #d79921);
+  button:           linear-gradient(#665c54);   // dark3
+  button-selected:  linear-gradient(#d79921);    // bright_yellow
+  active:           linear-gradient(to right, #b8bb26, #8ec07c); // green to aqua
+  urgent:           #fb4934;    // bright_red
+}
+
